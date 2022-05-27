@@ -1,4 +1,4 @@
-<div class="banner text-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_path @list.photo.key, crop: :fill %>)">
+<div class="banner text-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @list.photo.attached? ? cl_image_path(@list.photo.key, crop: :fill) : asset_path("cinema.jpg") %>)">
   <div class="container">
     <h1><%= @list.name %> Movies</h1>
     <%= link_to "#{@list.movies.count} #{@list.movies.count > 1 ? 'movies' : 'movie'}", "", class: "btn btn-warning" %>
