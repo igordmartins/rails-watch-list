@@ -32,6 +32,8 @@ gem "autoprefixer-rails", "10.2.5"
 gem "font-awesome-sass"
 gem "simple_form", github: "heartcombo/simple_form"
 gem 'cloudinary', '~> 1.16.0'
+gem 'open-uri'
+gem 'json'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
