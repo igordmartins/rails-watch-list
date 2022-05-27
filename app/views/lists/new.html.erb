@@ -2,7 +2,8 @@
   <h2 class="ml-5 my-5">Create a new list</h2>
   <%= simple_form_for @list do |f| %>
     <%= f.input :name %>
-    <%= f.button :submit, class: 'btn btn-primary' %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit, class: 'btn btn-success' %>
   <% end %>
-  <%= link_to "↩️ Back", lists_path, class: 'btn btn-danger' %>
+  <%= link_to "🔙", lists_path, class: "mt-3 btn btn-secondary" %>
 </div>
