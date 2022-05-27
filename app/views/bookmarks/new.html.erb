@@ -3,6 +3,6 @@
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.input :comment, placeholder: 'Add a comment' %>
     <%= f.association :movie, selected: 'The Shawshank Redemption' %>
-    <%= f.button :submit, class: "btn btn-primary" %>
+    <%= f.button :submit, class: "btn btn-secondary" %>
   <% end %>
 </div>
